@@ -1,3 +1,6 @@
+#  Author: Suneel Freimuth
+#  Run with Python 3.
+
 import sys
 
 BRAINFUCK = (
