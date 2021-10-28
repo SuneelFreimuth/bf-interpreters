@@ -117,4 +117,11 @@ if len(sys.argv) == 1:
         else:
             run_code(inp)
 elif len(sys.argv) == 2:
-    interpret(sys.argv[1])
+    arg = sys.argv[1]
+    if arg == '-h' or arg == '--help':
+        print(
+'''Usage: python bf.py [code]
+  Runs code if provided, otherwise enters a REPL.'''
+        )
+    else:
+        interpret(arg)
