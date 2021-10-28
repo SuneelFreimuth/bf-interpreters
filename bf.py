@@ -117,5 +117,4 @@ if len(sys.argv) == 1:
         else:
             run_code(inp)
 elif len(sys.argv) == 2:
-    with open(sys.argv[1]) as f:
-        interpret(f.read())
+    interpret(sys.argv[1])
