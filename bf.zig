@@ -79,10 +79,13 @@ fn readLine(stdin: anytype, buffer: []u8) []u8 {
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    defer gpa.deinit();
     var alloc = &gpa.allocator;
     const args = try process.argsAlloc(alloc);
+
     const stdin  = std.io.getStdIn().reader();
     const stdout = std.io.getStdOut().writer();
+
     if (args.len > 1) {
         try interpret(stdin, stdout, args[1]);
     } else {
