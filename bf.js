@@ -1,4 +1,4 @@
-// Author: Suneel Freimuth
+// Language: Javascript
 // Run with Node. Tested with Node 10 as the earliest version.
 
 const readline = require("readline");

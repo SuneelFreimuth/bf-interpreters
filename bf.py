@@ -1,4 +1,4 @@
-#  Author: Suneel Freimuth
+#  Language: Python
 #  Run with Python 3.
 
 import sys
