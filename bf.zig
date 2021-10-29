@@ -1,5 +1,6 @@
 // Author: Suneel Freimuth
 // Run with the Zig compiler like `zig run bf.zig`.
+// Compatible with v8.x and v9.x.
 
 const std = @import("std");
 const process = std.process;
@@ -8,7 +9,6 @@ const print = std.debug.print;
 const mem = std.mem;
 
 fn interpret(stdin: anytype, stdout: anytype, code: []const u8) !void {
-    _ = try stdout.write("INTERPRET\n");
     var tape = [_]u8{0} ** 30_000;
     var pdata: u32 = 0;
     var pinst: u32 = 0;
