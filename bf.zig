@@ -1,6 +1,6 @@
 // Author: Suneel Freimuth
-// Run with the Zig compiler like `zig run bf.zig`.
-// Compatible with v8.x and v9.x.
+// Run with the Zig compiler like `zig run bf.zig`;
+// compatible with Zig v8.x and v9.x.
 
 const std = @import("std");
 const process = std.process;
