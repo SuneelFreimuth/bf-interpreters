@@ -71,8 +71,6 @@ fn interpret(stdin: anytype, stdout: anytype, code: []const u8) !void {
     }
 }
 
-const program = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.";
-
 fn readLine(stdin: anytype, buffer: []u8) []u8 {
     return stdin.readUntilDelimiterOrEof(buffer, '\n') catch buffer orelse buffer;
 }
