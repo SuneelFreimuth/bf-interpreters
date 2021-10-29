@@ -10,4 +10,5 @@ Each interpreter:
   ```
 - Can be run with no arguments to open a REPL interface.
 
-Has implementation-specific info at the top of its source file.
+Some interpreters can do more than that, but each can do at least that. Implementation-specific
+information and instructions on how to run an interpreter can be found at the top of its source file.

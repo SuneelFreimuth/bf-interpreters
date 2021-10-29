@@ -22,10 +22,10 @@ fn interpret(stdin: anytype, stdout: anytype, code: []const u8) !void {
                 if (pdata > 0) pdata -= 1;
             },
             '+' => {
-                tape[pdata] += 1;
+                if (tape[pdata] < @bitSizeOf(u8) - 1) tape[pdata] += 1;
             },
             '-' => {
-                tape[pdata] -%= 1;
+                if (tape[pdata] > 0) tape[pdata] -= 1;
             },
             '.' => {
                 try stdout.writeByte(tape[pdata]);
@@ -70,8 +70,6 @@ fn interpret(stdin: anytype, stdout: anytype, code: []const u8) !void {
         pinst += 1;
     }
 }
-
-const program = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.";
 
 fn readLine(stdin: anytype, buffer: []u8) []u8 {
     return stdin.readUntilDelimiterOrEof(buffer, '\n') catch buffer orelse buffer;
