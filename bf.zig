@@ -1,6 +1,11 @@
 // Language: Zig
-// Run with the Zig compiler like `zig run bf.zig`;
-// compatible with v8.x and v9.x.
+// I recommend building an executable and running it like
+//   ```
+//   zig build-exe bf.zig
+//   bf
+//   ```
+// so that you can pass the executable command line arguments.
+// Compatible with Zig v8.x and v9.x.
 
 const std = @import("std");
 const process = std.process;
