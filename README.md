@@ -4,7 +4,6 @@ Interpreters in a variety of languages for [Brainfuck](https://esolangs.org/wiki
 Each interpreter:
 - Can be run with a single argument like `bf <code>` to run `<code>`, like
   ```shell
-"
   $ bf "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++."
   Hello World!
   ```
