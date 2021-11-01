@@ -4,9 +4,9 @@ Interpreters in a variety of languages for [Brainfuck](https://esolangs.org/wiki
 Each interpreter:
 - Can be run with a single argument like `bf <code>` to run `<code>`, like
   ```shell
-  $ PRINT_PUNC="+++++++++++++++++++++++++++++++++.+.+.+."
-  $ bf $PRINT_PUNC
-  !"#$
+"
+  $ bf "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++."
+  Hello World!
   ```
 - Can be run with no arguments to open a REPL interface.
 
