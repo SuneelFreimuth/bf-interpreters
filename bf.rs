@@ -1,3 +1,9 @@
+/* Language: Rust
+ * Run with
+ *   rustc bf.rs
+ *   ./bf
+ */
+
 use std::io::Write;
 use std::env;
 
