@@ -1,3 +1,9 @@
+/* Language: C
+ * Run like
+ *   gcc -o bf bf.c
+ *   ./bf
+ */
+
 #include "stdio.h"
 #include "string.h"
 #include "stdbool.h"
