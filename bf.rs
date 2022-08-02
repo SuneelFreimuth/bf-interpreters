@@ -84,6 +84,7 @@ fn interpret(stdin: &std::io::Stdin, stdout: &mut std::io::Stdout, code: &Vec<u8
 
 
 fn main() {
+    let x = 5;
     let args: Vec<String> = env::args().collect();
     let stdin = std::io::stdin();
     let mut stdout = std::io::stdout();
